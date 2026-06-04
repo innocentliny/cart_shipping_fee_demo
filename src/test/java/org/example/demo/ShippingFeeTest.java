@@ -72,4 +72,13 @@ public class ShippingFeeTest {
     private void when_calculate_fee_then_shipping_not_found() {
         Assertions.assertThrows(ShippingNotFoundException.class, () -> when_calculate_fee(box, "unknown"));
     }
+
+    @Test
+    void test_hshin_chu_weight_gt_4kg_and_fee_50() throws ShippingNotFoundException {
+        given_box(10, 10, 90, 10);
+
+        when_calculate_fee(box, "Hshin Chu");
+
+        then_fee_is(50);
+    }
 }
