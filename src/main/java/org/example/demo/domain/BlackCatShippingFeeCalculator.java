@@ -1,9 +1,11 @@
 package org.example.demo.domain;
 
-import java.util.Map;
 import java.util.NavigableMap;
 import java.util.TreeMap;
 
+/**
+ * 黑貓宅急便，以體積計算運費。
+ */
 public class BlackCatShippingFeeCalculator implements ShippingFeeCalculator {
     private final NavigableMap<Integer, Integer> volumeFees = new TreeMap<>();
 

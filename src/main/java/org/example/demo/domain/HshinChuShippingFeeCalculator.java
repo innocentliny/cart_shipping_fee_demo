@@ -3,6 +3,9 @@ package org.example.demo.domain;
 import java.util.NavigableMap;
 import java.util.TreeMap;
 
+/**
+ * 新竹貨運，以重量計算運費。
+ */
 public class HshinChuShippingFeeCalculator implements ShippingFeeCalculator {
     private NavigableMap<Double,Integer> weightFees =  new TreeMap<>();
 
