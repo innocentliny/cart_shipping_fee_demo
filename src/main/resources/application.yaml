@@ -1,0 +1,3 @@
+spring:
+  application:
+    name: cart_shipping_fee_demo
